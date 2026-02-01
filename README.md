@@ -227,6 +227,64 @@ keyword_analysis/
 - `superyachttimes.com_rank_cleaned`: Competitor 2 rank
 - (Additional competitor ranks...)
 
+## 🧹 Data Cleaning & Preparation
+
+To ensure statistical accuracy and resolve formatting inconsistencies in the raw dataset, the following steps were taken:
+
+### Rank Normalization (The "Unranked" Penalty)
+- Keywords where a domain did not appear in the Top 100 were originally marked with symbols (e.g., `-`, `c`, `x`)
+- These were converted to a numerical value of **150**
+- **Purpose**: Allows for mathematical comparison (Spearman Correlation) and ensures unranked keywords are correctly penalized in "Average Rank" calculations
+
+### String-to-Numeric Conversion
+- Several columns (specifically Ranking and Rank Difference) contained hidden characters like single quotes (e.g., `'-5`)
+- **Action**: All metric columns were forcibly cast to numeric formats using `pd.to_numeric` with error-coercion to prevent calculation failures
+
+### Imputation of Missing Values
+- **Keyword Difficulty (KD)**: Missing values filled with the **Median KD** of the dataset to prevent skewing the "Opportunity Matrix"
+- **CPC & Search Volume**: Missing values treated as **0**, assuming negligible commercial value/volume if data provider lacks a record
+
+### Intent Mapping
+- Raw shorthand codes (`i`, `c`, `t`, `n`) mapped to descriptive labels:
+  - `i` = Informational
+  - `c` = Commercial
+  - `t` = Transactional
+  - `n` = Navigational
+- **Purpose**: Clearer stakeholder reporting and intent-based segmentation analysis
+
+## 📋 Strategic Assumptions
+
+The following core assumptions underpin all analysis conclusions:
+
+### Primary Subject Designation
+- **Yachting Pages** (yachtingpages.com) is designated as the primary subject domain
+- All performance metrics, including the "Value Matrix" and "Content Decay Analysis," are centered on this domain
+- Provides actionable internal insights for strategic planning
+
+### Representative Competitor Set
+- Four additional domains selected represent the primary "Share of Voice" benchmarks for the superyacht industry:
+  - Boat International
+  - Superyacht Times
+  - Superyacht Content
+  - Superyacht Service Guide
+- Competitive gaps identified based on **collective performance** of this group
+- Assumption: These competitors represent the true competitive landscape for the target keyword portfolio
+
+### Ordinality of Rankings
+- Ranking data is **non-linear**; visibility and traffic value varies exponentially
+- Moving from **Rank 2 → Rank 1** generates significantly higher traffic lift than **Rank 20 → Rank 19**
+- Implications: Small improvements at top positions have outsized ROI vs. mid-tier optimizations
+
+### Visibility Weighting
+- "Visibility Score" in dataset accurately weights the value of ranking positions
+- Weighting based on click-through rate (CTR) expectations
+- Used for revenue projections and opportunity prioritization
+
+### Penalty Value Impact (Unranked = 150)
+- Any keyword outside Top 100 provides **zero organic traffic**
+- Represents **total content deficiency** for the subject domain
+- Justifies aggressive gap-closure strategy for "unranked but rankable" terms
+
 ## 🔄 Update Schedule
 
 Recommended quarterly updates (every 3 months):
