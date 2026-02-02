@@ -20,21 +20,20 @@ This analysis covers:
 - **Superyacht Content**: 4.6% SoV (#5 Declining)
 
 ### High-Value Opportunities
-- **Money Keywords (Top 10)**: 162 keywords generating core revenue
-- **On-the-Cusp Keywords (Rank 11-20)**: 208 keywords | +$159/month potential
+- **Money Keywords (Top 10)**: 162 keywords generating highest click volume
+- **On-the-Cusp Keywords (Rank 11-20)**: 208 keywords | Position improvement to top 10 = 3-5x click increase per keyword
 - **Quick Win Keywords**: 1,191 keywords with high volume/low difficulty
-- **Gap Keywords**: 180 competitive gaps | +$50/month potential
+- **Gap Keywords**: 180 competitive gaps | 2-3x click increase from unranked status
 
-### 90-Day Revenue Opportunity
-- **Total Potential**: +$329/month (+76.5% improvement in top 10 rankings)
-- **On-the-Cusp Optimization**: +124 keywords to top 10 = **+$159/month**
-- **Gap Closure**: +73 easy gap keywords = **+$50/month**
-- **Content Decay Fix**: Prevent -$120/month loss
+### 90-Day Click Opportunity
+- **On-the-Cusp Optimization**: +124 keywords to top 10 = **3-5x click multiplier per keyword**
+- **Gap Closure**: +73 easy gap keywords = **2-3x click increase from zero visibility**
+- **Content Decay Fix**: Stop ongoing click loss from ranking decay (34,442 positions lost)
 
 ### Critical Alert
 ⚠️ **Content Decay Crisis**: 34,442 net positions lost in 90 days
 - Top decaying page: /articles/ (down 81 positions)
-- Estimated impact: -$120-180/month
+- Estimated impact: 30-45% reduction in click volume from these pages
 - **Action Required**: Week 1 emergency content refresh
 
 ## 📁 Project Structure
@@ -104,26 +103,26 @@ keyword_analysis/
 - Diagnose root cause of 34,442 position loss
 - Emergency content refresh on /articles/ section
 - Technical SEO audit for penalties/issues
-- Expected recovery: +$120/month
+- Expected recovery: Restore 50%+ of lost click volume
 
 ### Phase 2: Short-term (Weeks 2-4)
 **Optimize On-the-Cusp Keywords**
 - Move 124 keywords from ranks 11-20 to top 10
 - On-page optimization + fresh content
 - Backlink acquisition (5-10 per keyword)
-- Revenue impact: +$159/month
+- Click impact: 3-5x multiplier per keyword moved to top 10
 
 ### Phase 3: Medium-term (Weeks 4-8)
 **Close Competitive Gaps**
 - Target 105 easy gap keywords (KD < 30)
 - Expected captures: 73 keywords (70% success)
-- Revenue impact: +$50/month
+- Click impact: 2-3x multiplier per new keyword ranked
 
 ### Phase 4: Strategic (Ongoing)
 **Expand Commercial Keyword Portfolio**
 - Current: 1,178 commercial keywords (14.9%)
 - Target: 2,400+ commercial keywords (30%)
-- Long-term revenue growth: +$200-300/month
+- Click impact: Higher-intent keywords generate 2-4x more clicks per position
 
 ## 📈 Expected 90-Day Outcomes
 
@@ -132,11 +131,9 @@ keyword_analysis/
 | Top 10 Keywords | 162 | 286 | +124 (+76.5%) |
 | Top 20 Keywords | 370 | 443 | +73 (+19.7%) |
 | Share of Voice | 47.2% | 49.7% | +2.5% |
-| Monthly Revenue | $X | $X+$329 | +$329 (+YY%) |
 | Market Position | #1 at Risk | #1 Stabilized | Maintained |
 | Content Health | ⚠️ Critical | ✅ Stable | Improved |
-
-**Annual Revenue Impact**: +$3,948 from priority actions alone
+| Click Volume Multiplier | Baseline | 3-5x on cusp keywords | Estimated 15-25% increase |
 
 ## 🛠️ Tools & Technologies
 
@@ -189,7 +186,7 @@ keyword_analysis/
 
 ### Weaknesses ⚠️
 - Critical content decay: 34,442 positions lost
-- Revenue concentrated in 21% of keywords
+- Click volume concentrated in 21% of keywords
 - Weak commercial intent coverage (14.9%)
 - Navigational keywords highly volatile
 
@@ -278,7 +275,7 @@ The following core assumptions underpin all analysis conclusions:
 ### Visibility Weighting
 - "Visibility Score" in dataset accurately weights the value of ranking positions
 - Weighting based on click-through rate (CTR) expectations
-- Used for revenue projections and opportunity prioritization
+- Used for click impact projections and opportunity prioritization
 
 ### Penalty Value Impact (Unranked = 150)
 - Any keyword outside Top 100 provides **zero organic traffic**
